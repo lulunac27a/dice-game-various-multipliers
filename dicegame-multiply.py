@@ -1,7 +1,7 @@
-import ipywidgets as widgets
-from IPython.display import display, clear_output
 import math
 import random
+import ipywidgets as widgets
+from IPython.display import display, clear_output
 
 def dice_game(num_rolls = 10, num_players = 2, highest_guess = 4, guess = 7):
     scores = [0] * num_players
@@ -12,7 +12,7 @@ def dice_game(num_rolls = 10, num_players = 2, highest_guess = 4, guess = 7):
     score_multiplier_for_sequential = 1
     score_multiplier_for_close_dice = 1
     score_multiplier_for_low_or_high = 1
-    for i in range(num_rolls):
+    for _ in range(num_rolls):
         for player in range(num_players):
             roll1 = random.randint(1, 6)
             roll2 = random.randint(1, 6)
