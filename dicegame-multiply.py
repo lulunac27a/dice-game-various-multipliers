@@ -6,11 +6,10 @@ import random
 import ipywidgets as widgets
 from IPython.display import display, clear_output
 
-"""
-Dice game with various score multipliers that multiply by 2 if criteria meets the requirements, else reset to 1.
-"""
-
 def dice_game(num_rolls = 10, num_players = 2, highest_guess = 4, guess = 7):
+    """
+    Dice game with various score multipliers that multiply by 2 if criteria meets the requirements, else reset to 1.
+    """    
     scores = [0] * num_players
     score_multiplier = 1
     score_multiplier_for_doubles = 1
