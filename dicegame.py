@@ -87,6 +87,9 @@ output = widgets.Output()
 display(num_rolls_slider, num_players_slider, change_value, output)
 
 def roll_dice(change):
+    """
+    Rolls the dice.
+    """    
     with output:
         clear_output()
         global numRolls, numPlayers
